@@ -26,6 +26,7 @@ namespace NZWalks.API
 
             // Inject the interface and Repository implementation
             builder.Services.AddScoped<IRegionRepository, RegionRepository>();
+            builder.Services.AddScoped<IWalksReposiory, WalksRepository>();
 
             //inject the Profiles for Automapper 
             builder.Services.AddAutoMapper(typeof(Program).Assembly);
