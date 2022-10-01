@@ -40,7 +40,7 @@ namespace NZWalks.API.Repositories
             await _NZWalksDBContext.SaveChangesAsync();
             return existingWalk;
         }
-
+                
         public async Task<IEnumerable<Walk>> GetAllWalksAsync()
         {
             return await _NZWalksDBContext.Walks
